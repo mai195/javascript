@@ -1,8 +1,8 @@
 const colors = ['red', 'blue', 'green', 'purple', 'orange', 'pink', 'red', 'blue', 'green', 'purple', 'orange', 'pink'];
-let cards = shuffle(colors.concat(colors));
+//let cards = shuffle(colors.concat(colors));
 let selectedCards = [];
 let score = 0;
-let timeLeft = 30;
+//let timeLeft = 30;
 let gameInterval;
 
 const startbtn = document.getElementById('startbtn');
@@ -78,7 +78,7 @@ function startGameTimer(timeLeft) {
 
         if (timeLeft === 0) {
             clearInterval(gameInterval);
-            let timeLeft = 30;
+            //let timeLeft = 30;
             alert('Game Over!');
             startbtn.disabled = false;
         }
